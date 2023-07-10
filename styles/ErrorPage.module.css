@@ -1,0 +1,41 @@
+.container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+
+  text-align: center;
+  color: #343434;
+}
+
+.container.not_found {
+  transform: translateY(50%);
+}
+
+.container.internal_server {
+  transform: translateY(-50%);
+}
+
+.container h1 {
+  font-size: 160px;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 20px;
+}
+
+.container a {
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  padding: 12px 24px;
+  margin-top: 12px;
+  display: inline-block;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+
+.container a:hover {
+  background: #2d2d2d;
+}

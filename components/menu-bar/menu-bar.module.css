@@ -1,0 +1,61 @@
+.is__active {
+  background-color: #303030 !important;
+}
+
+.editor__header {
+  align-items: center;
+  background: #0d0d0d;
+  border-bottom: 3px solid #0d0d0d;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  padding: 0.25rem;
+}
+
+.menu__item {
+  background-color: transparent;
+  border: none;
+  border-radius: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+  height: 1.75rem;
+  margin-right: 0.25rem;
+  padding: 0.25rem;
+  width: 1.75rem;
+}
+
+.menu__item svg {
+  fill: currentColor;
+  height: 100%;
+  width: 100%;
+}
+
+.divider {
+  background-color: #ffffff40;
+  height: 1.25rem;
+  margin-left: 0.5rem;
+  margin-right: 0.75rem;
+  width: 1px;
+}
+
+.list__heading {
+  list-style: none;
+}
+
+.list__heading button {
+  width: 100%;
+  text-align: left;
+}
+
+.list__heading li {
+  padding: 0 0.5rem;
+  line-height: var(--size-8);
+}
+
+.list__heading .heading__active,
+.list__heading li:hover {
+  background-color: #ecf5ff;
+  color: #66b1ff;
+}

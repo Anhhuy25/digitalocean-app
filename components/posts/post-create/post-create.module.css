@@ -1,0 +1,17 @@
+.content {
+  width: 95%;
+  max-width: 60rem;
+  margin: var(--size-8) auto;
+  line-height: var(--size-6);
+  background-color: var(--color-grey-100);
+  border-radius: 6px;
+  padding: var(--size-4);
+}
+
+.content .title {
+  font-size: var(--size-8);
+  color: var(--color-primary-500);
+  margin: 0;
+  line-height: initial;
+  text-align: center;
+}
