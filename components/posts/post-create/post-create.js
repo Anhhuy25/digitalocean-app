@@ -134,10 +134,6 @@ export default function PostCreate() {
               defaultValue=""
               rules={{
                 required: "This field is required",
-                // minLength: {
-                //   value: 12,
-                //   message: "This input must exceed 11 characters",
-                // },
               }}
               render={({ field }) => (
                 <Input
@@ -207,8 +203,6 @@ export default function PostCreate() {
                     src={imagePreview}
                     boxSize={200}
                   />
-
-                  {/* <Input type="file" onChange={handleChangeImage} isDisabled /> */}
                   <input
                     type="file"
                     onChange={handleChangeImage}

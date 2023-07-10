@@ -13,12 +13,6 @@ import { uploadImage } from "@/lib/api-utils";
 const Editor = React.forwardRef((props, ref) => {
   const editor = useEditor({
     extensions: [
-      // StarterKit.configure({
-      //   bulletList: {
-      //     keepAttributes: false,
-      //     keepMarks: true,
-      //   },
-      // }),
       StarterKit,
       Underline,
       Subscript,

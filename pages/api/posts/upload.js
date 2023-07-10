@@ -18,7 +18,6 @@ export const config = {
 async function handler(req, res) {
   if (req.method === "POST") {
     const form = formidable({
-      // uploadDir: "public/images/upload",
       keepExtensions: true,
     });
 

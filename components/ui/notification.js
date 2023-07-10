@@ -17,14 +17,6 @@ function Notification(props) {
 
   const cssClasses = `${classes.notification} ${statusClasses}`;
 
-  // return ReactDOM.createPortal(
-  //   <div className={cssClasses}>
-  //     <h2>{title}</h2>
-  //     <p>{message}</p>
-  //   </div>,
-  //   document.getElementById('notifications')
-  // );
-
   return (
     <div className={cssClasses}>
       <h2>{title}</h2>

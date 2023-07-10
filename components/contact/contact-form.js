@@ -29,24 +29,9 @@ export default function ContactForm() {
       message: messageInputRef.current.value,
     };
 
-    // Call api
     setRequestStatus(STATUS.PENDING);
 
-    // const res = await axios.post("/api/contact", message);
-
-    // if (res.data.ok) {
-    //   setRequestStatus("success");
-
-    //   emailInputRef.current.value = "";
-    //   nameInputRef.current.value = "";
-    //   messageInputRef.current.value = "";
-    // } else {
-    //   let message = showErrorMessageHandler(res.data.code);
-
-    //   setRequestError(message);
-    //   setRequestStatus("error");
-    // }
-
+    // Call api
     fetch("/api/contact", {
       method: "POST",
       headers: {

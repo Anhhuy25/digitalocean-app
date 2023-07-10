@@ -10,28 +10,6 @@ export default function SlugPage(props) {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
-  // useEffect(() => {
-  //   async function getPostV2() {
-  //     setIsLoading(true);
-  //     try {
-  //       const res = await fetch(`/api/posts/${props.id}`);
-
-  //       if (res.ok) {
-  //         const data = await res.json();
-  //         setPost(data.post);
-  //       } else {
-  //         router.push("/404");
-  //       }
-  //     } catch (error) {
-  //       router.push("/500");
-  //     } finally {
-  //       setIsLoading(false);
-  //     }
-  //   }
-
-  //   getPostV2();
-  // }, [props.id]);
-
   if (router.isFallback) {
     return (
       <Heading textAlign="center" as="h4" size="md">
@@ -39,29 +17,9 @@ export default function SlugPage(props) {
       </Heading>
     );
   }
-  // if (isLoading) {
-  //   return (
-  //     <Heading textAlign="center" as="h4" size="md">
-  //       Loading...
-  //     </Heading>
-  //   );
-  // }
 
   return (
     <Fragment>
-      {/* {post && (
-        <Fragment>
-          <Head>
-            <title>{post.title || "Title post"}</title>
-            <meta
-              name="description"
-              content={post.abstract || "Abstract post"}
-            />
-          </Head>
-          <PostContent post={post} />
-        </Fragment>
-      )} */}
-
       <Head>
         <title>{props.post.title || "Title post"}</title>
         <meta
@@ -116,7 +74,6 @@ export async function getStaticProps(context) {
 
   return {
     props: { post: data.post },
-    // props: { id },
     revalidate: 10,
   };
 }
